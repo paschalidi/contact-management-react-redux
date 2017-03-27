@@ -1,6 +1,6 @@
-import reducerAddDelete from '../../src/reducers/reducer-add-delete-contact';
+import reducerAddDelete from '../../src/reducers/reducer-add-delete-update-contact';
 import {
-  ADD_CONTACT,
+  ADD_UPDATE_CONTACT,
   DELETE_CONTACT,
 } from '../../src/actions/types'
 
@@ -15,7 +15,7 @@ describe('reducerAddDelete', () => {
 
   it('handles the action it supposed to', () => {
     const state = { 0: { id: null, firstName: null, lastName: null, email: null } };
-    const action = { type: ADD_CONTACT, payload: { id: 1, firstName: 'a name', lastName: 'a last name', email: 'ex@mail.com' } };
+    const action = { type: ADD_UPDATE_CONTACT, payload: { id: 1, firstName: 'a name', lastName: 'a last name', email: 'ex@mail.com' } };
 
     expect(reducerAddDelete(state, action))
       .toEqual({
