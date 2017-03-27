@@ -1,5 +1,6 @@
 import {
   ADD_CONTACT,
+  DELETE_CONTACT,
 } from './types';
 let id = 0;
 
@@ -9,5 +10,12 @@ export function addNewContact(contact) {
   return {
     type: ADD_CONTACT,
     payload: { id, firstName, lastName, email }
+  };
+}
+
+export function deleteContact(identifier) {
+  return {
+    type: DELETE_CONTACT,
+    payload: { identifier }
   };
 }
