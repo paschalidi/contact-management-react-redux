@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 
 class NavigationBar extends Component {
   render() {
@@ -15,7 +16,7 @@ class NavigationBar extends Component {
                   <ul className="nav navbar-nav navbar-right">
                     <p className="navbar-text">
                       Contact number <span
-                      className="label label-primary">item number</span>
+                      className="label label-primary">{Object.keys(this.props.contacts).length - 1 }</span>
                     </p>
                   </ul>
                 </div>
@@ -28,4 +29,8 @@ class NavigationBar extends Component {
   }
 }
 
-export default NavigationBar
+function mapsStateToProps(state) {
+  const { reducerAddDeleteUpdateContact } = state;
+  return { contacts: reducerAddDeleteUpdateContact }
+}
+export default connect(mapsStateToProps)(NavigationBar)
