@@ -1,5 +1,5 @@
 import {
-  ADD_CONTACT,
+  ADD_UPDATE_CONTACT,
   DELETE_CONTACT,
 } from '../actions/types'
 
@@ -14,7 +14,7 @@ const INITIAL_STATE = {
 
 export default function (state = INITIAL_STATE, action) {
   switch (action.type) {
-    case ADD_CONTACT:
+    case ADD_UPDATE_CONTACT:
       const { id, firstName, lastName, email } = action.payload;
 
       return Object.assign(
