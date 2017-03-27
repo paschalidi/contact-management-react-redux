@@ -7,6 +7,11 @@ class Card extends Component {
     this.props.deleteContact(this.props.id)
   }
 
+  handleEditAction() {
+    const { id, firstName, lastName, email } = this.props;
+    this.props.editContact({ id, firstName, lastName, email })
+  }
+
   render() {
     return (
       <div className="container-card">
@@ -20,6 +25,7 @@ class Card extends Component {
                 <div className="btn-group" role="group">
                   <button type="button"
                           className="btn btn-info edit-contact"
+                          onClick={this.handleEditAction.bind(this)}
                   >Edit contact
                   </button>
                 </div>
