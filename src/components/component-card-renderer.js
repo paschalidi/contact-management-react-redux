@@ -27,8 +27,8 @@ class ShowContacts extends Component {
 }
 
 function mapsStateToProps(state) {
-  const { reducerAddDeleteContact } = state;
-  return { contacts: reducerAddDeleteContact }
+  const { reducerAddDeleteUpdateContact } = state;
+  return { contacts: reducerAddDeleteUpdateContact }
 }
 
 export default connect(mapsStateToProps)(ShowContacts)
