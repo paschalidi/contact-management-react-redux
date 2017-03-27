@@ -9,3 +9,64 @@ exports[`CardRenderer renders correctly 1`] = `
   />
 </div>
 `;
+
+exports[`CardRenderer should dispatch action when clicking like 1`] = `
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <Connect(ShowContacts)
+    contacts={
+      Object {
+        "1": Object {
+          "email": "mail",
+          "firstName": "name",
+          "id": 1,
+          "lastName": "lastname",
+        },
+        "2": Object {
+          "email": "mail",
+          "firstName": "name",
+          "id": 1,
+          "lastName": "lastname",
+        },
+        "3": Object {
+          "email": "mail",
+          "firstName": "name",
+          "id": 1,
+          "lastName": "lastname",
+        },
+      }
+    }
+  >
+    <ShowContacts
+      contacts={
+        Object {
+          "0": Object {
+            "email": null,
+            "firstName": null,
+            "id": null,
+            "lastName": null,
+          },
+        }
+      }
+      dispatch={[Function]}
+    >
+      <div
+        className="container-show-contact"
+      >
+        <div
+          className="row"
+        />
+      </div>
+    </ShowContacts>
+  </Connect(ShowContacts)>
+</Provider>
+`;

@@ -1,5 +1,185 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Card mounting functions 1`] = `
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <Connect(Card)
+    email="email"
+    firstName="a name"
+    id={1}
+    lastName="a last name"
+  >
+    <Card
+      addNewContact={[Function]}
+      deleteContact={[Function]}
+      editContact={[Function]}
+      email="email"
+      firstName="a name"
+      id={1}
+      lastName="a last name"
+      updateContact={[Function]}
+    >
+      <div
+        className="container-card"
+      >
+        <div
+          className="col-sm-6 col-md-4"
+        >
+          <div
+            className="panel panel-default"
+          >
+            <div
+              className="panel-body"
+            >
+              <p>
+                First Name: 
+                a name
+              </p>
+              <p>
+                Last Name: 
+                a last name
+              </p>
+              <p>
+                Email: 
+                email
+              </p>
+              <div
+                className="btn-group btn-group-justified"
+                role="group"
+              >
+                <div
+                  className="btn-group"
+                  role="group"
+                >
+                  <button
+                    className="btn btn-info edit-contact"
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    Edit contact
+                  </button>
+                </div>
+                <div
+                  className="btn-group"
+                  role="group"
+                >
+                  <button
+                    className="btn btn-danger delete-contact"
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    Delete contact
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </Card>
+  </Connect(Card)>
+</Provider>
+`;
+
+exports[`Card mounting functions 2`] = `
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <Connect(Card)
+    email="email"
+    firstName="a name"
+    id={1}
+    lastName="a last name"
+  >
+    <Card
+      addNewContact={[Function]}
+      deleteContact={[Function]}
+      editContact={[Function]}
+      email="email"
+      firstName="a name"
+      id={1}
+      lastName="a last name"
+      updateContact={[Function]}
+    >
+      <div
+        className="container-card"
+      >
+        <div
+          className="col-sm-6 col-md-4"
+        >
+          <div
+            className="panel panel-default"
+          >
+            <div
+              className="panel-body"
+            >
+              <p>
+                First Name: 
+                a name
+              </p>
+              <p>
+                Last Name: 
+                a last name
+              </p>
+              <p>
+                Email: 
+                email
+              </p>
+              <div
+                className="btn-group btn-group-justified"
+                role="group"
+              >
+                <div
+                  className="btn-group"
+                  role="group"
+                >
+                  <button
+                    className="btn btn-info edit-contact"
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    Edit contact
+                  </button>
+                </div>
+                <div
+                  className="btn-group"
+                  role="group"
+                >
+                  <button
+                    className="btn btn-danger delete-contact"
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    Delete contact
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </Card>
+  </Connect(Card)>
+</Provider>
+`;
+
 exports[`Card renders correctly 1`] = `
 <div
   className="container-card"
@@ -15,11 +195,11 @@ exports[`Card renders correctly 1`] = `
       >
         <p>
           First Name: 
-          fname
+          a name
         </p>
         <p>
           Last Name: 
-          lname
+          a last name
         </p>
         <p>
           Email: 
@@ -58,4 +238,184 @@ exports[`Card renders correctly 1`] = `
     </div>
   </div>
 </div>
+`;
+
+exports[`Card simulating actions 1`] = `
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <Connect(Card)
+    email="email"
+    firstName="a name"
+    id={1}
+    lastName="a last name"
+  >
+    <Card
+      addNewContact={[Function]}
+      deleteContact={[Function]}
+      editContact={[Function]}
+      email="email"
+      firstName="a name"
+      id={1}
+      lastName="a last name"
+      updateContact={[Function]}
+    >
+      <div
+        className="container-card"
+      >
+        <div
+          className="col-sm-6 col-md-4"
+        >
+          <div
+            className="panel panel-default"
+          >
+            <div
+              className="panel-body"
+            >
+              <p>
+                First Name: 
+                a name
+              </p>
+              <p>
+                Last Name: 
+                a last name
+              </p>
+              <p>
+                Email: 
+                email
+              </p>
+              <div
+                className="btn-group btn-group-justified"
+                role="group"
+              >
+                <div
+                  className="btn-group"
+                  role="group"
+                >
+                  <button
+                    className="btn btn-info edit-contact"
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    Edit contact
+                  </button>
+                </div>
+                <div
+                  className="btn-group"
+                  role="group"
+                >
+                  <button
+                    className="btn btn-danger delete-contact"
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    Delete contact
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </Card>
+  </Connect(Card)>
+</Provider>
+`;
+
+exports[`Card simulating actions 2`] = `
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <Connect(Card)
+    email="email"
+    firstName="a name"
+    id={1}
+    lastName="a last name"
+  >
+    <Card
+      addNewContact={[Function]}
+      deleteContact={[Function]}
+      editContact={[Function]}
+      email="email"
+      firstName="a name"
+      id={1}
+      lastName="a last name"
+      updateContact={[Function]}
+    >
+      <div
+        className="container-card"
+      >
+        <div
+          className="col-sm-6 col-md-4"
+        >
+          <div
+            className="panel panel-default"
+          >
+            <div
+              className="panel-body"
+            >
+              <p>
+                First Name: 
+                a name
+              </p>
+              <p>
+                Last Name: 
+                a last name
+              </p>
+              <p>
+                Email: 
+                email
+              </p>
+              <div
+                className="btn-group btn-group-justified"
+                role="group"
+              >
+                <div
+                  className="btn-group"
+                  role="group"
+                >
+                  <button
+                    className="btn btn-info edit-contact"
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    Edit contact
+                  </button>
+                </div>
+                <div
+                  className="btn-group"
+                  role="group"
+                >
+                  <button
+                    className="btn btn-danger delete-contact"
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    Delete contact
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </Card>
+  </Connect(Card)>
+</Provider>
 `;
