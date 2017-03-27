@@ -7,8 +7,7 @@ import NewForm from '../../src/components/component-form-new'
 
 import renderer from 'react-test-renderer';
 
-
-describe('NavigationBar', () => {
+describe('NewForm', () => {
   const createStoreWithMiddleware = applyMiddleware()(createStore);
   it('renders correctly', () => {
     const component = renderer.create(
