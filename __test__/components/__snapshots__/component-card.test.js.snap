@@ -35,6 +35,7 @@ exports[`Card renders correctly 1`] = `
           >
             <button
               className="btn btn-info edit-contact"
+              onClick={[Function]}
               type="button"
             >
               Edit contact
