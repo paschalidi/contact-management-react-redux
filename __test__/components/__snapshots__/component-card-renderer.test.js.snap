@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardRenderer renders correctly 1`] = `
+<div
+  className="container-show-contact"
+>
+  <div
+    className="row"
+  />
+</div>
+`;
